@@ -1,0 +1,100 @@
+.eclip {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+header {
+  width: 910px;
+  color: #fff;
+  text-align: center;
+  background: url("../img/nav-bg.png") no-repeat;
+  height: 100px;
+  ul {
+    li {
+      display: inline-block;
+      margin: -6px 6px;
+      a {
+        margin-top: 20px;
+        display: inline-block;
+        width: 100px;
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+          -webkit-transform: scale(1.3);
+          -moz-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+          -o-transform: scale(1.3);
+          transform: scale(1.3);
+        }
+      }
+      span {
+        display: inline-block;
+        width: 162px;
+        height: 64px;
+        background: url("../img/logo.png") no-repeat;
+      }
+    }
+  }
+  p {
+    color: #976392;
+    margin-top: 5px;
+    span {
+      display: inline-block;
+      background: #2c083e;
+      border: 1px #621568 solid;
+      width: 50px;
+      margin: 0 10px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      &:hover {
+        background: #b98fa4;
+      }
+      a {
+        color: #976392;
+        text-decoration: none;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+footer {
+  opacity: 0;
+  width: 910px;
+  font-size: 14px !important;
+  text-align: center;
+  color: #fff;
+  //float: left;
+  &.active {
+    opacity: 1;
+  }
+  ul {
+    margin-top: 20px;
+    li {
+      display: inline-block;
+      margin: 20px 6px;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      &:hover {
+        -webkit-transform: translateY(-6px) scale(1.2);
+        -moz-transform: translateY(-6px) scale(1.2);
+        -ms-transform: translateY(-6px) scale(1.2);
+        -o-transform: translateY(-6px) scale(1.2);
+        transform: translateY(-6px) scale(1.2);
+      }
+    }
+  }
+}
+
+
+@import "reset.scss";
+@import "home.scss";
+@import "page.scss";
