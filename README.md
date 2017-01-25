@@ -1,1 +1,3 @@
 # mall
+$ npm install
+$ gulp
